@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>My Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/visitor-card.png">
+</head>
+<body>
+    <div class="container">
+        <div id="cl" class="color"></div>
+        <div class="body-card">
+            <h2 id="fy">Fayi Muhadzdzib</h2>
+            <p>Front - End Developer</p>
+            <p>Jakarta, Indonesia</p>
+            <div id="link" class="media" style="display: none;">
+                <a href="https://www.instagram.com/fkydzzb_/"><i class="fa fa-instagram" area-hidden="true"></i></a>
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><i class="fa fa-facebook" area-hidden="true"></i></a>
+                <a href="https://github.com/FayiMuhadzdzib06"><i class="fa fa-github" area-hidden="true"></i></a>
+                <a href="https://codepen.io/fayimuhadzdzib06"><i class="fa fa-codepen" area-hidden="true"></i></a>
+            </div>
+            <h2 id="judul">Profile Card</h2>
+        </div>
+        <div onclick="slideUp()" id="profile" class="pp"></div>
+        <div onclick="contak()" id="ad" class="arrow-down">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+        <div onclick="keatas()" id="c" class="contact">
+            <h3>Contact</h3>
+            <div class="hp">
+                <i class="fa fa-phone"></i>
+                <p>+6289700876453</p>
+            </div>
+            <div class="email">
+                <i class="fa fa-envelope"></i>
+                <p>fvarz006@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function slideUp(){
+            document.getElementById("profile").style.transform = "translateY(-80px)";
+            document.getElementById("profile").style.width = "150px";
+            document.getElementById("profile").style.height = "150px";
+            document.getElementById("profile").style.backgroundPosition = "-80px 0";
+            document.getElementById("profile").style.borderRadius = "50%";
+            document.getElementById("fy").style.paddingTop = "110px";
+            document.getElementById("link").style.display = "flex";
+            document.getElementById("judul").style.display = "none";
+            document.getElementById("cl").style.opacity = "0.6";
+            document.getElementById("ad").style.marginTop = "360px";
+        }
+        function contak(){
+            document.getElementById("c").style.marginTop = "440px";
+            document.getElementById("ad").style.marginTop = "270px";
+        }
+        function keatas(){
+            document.getElementById("c").style.marginTop = "220px"
+            document.getElementById("ad").style.marginTop = "360px"
+        }
+    </script>
+</body>
+</html>
